@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* /////////////////////  NAVBAR ////////////////// */
+.navbar{
+    width: 100%;
+    height: 12vh;
+    background-color: #78b16b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: #3a8d29 0 5px 10px;
+    z-index: 1;
+    position: relative;
+}
+.menu_btn, .profile_btn{
+    height: 45px;
+    width: 45px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    margin: 15px;
+    transition: 0.1s;
+}
+.menu_btn img, .profile_btn img{
+    height: 100%;
+    width: 100%;
+}
+.menu_btn:hover{
+    cursor: pointer;
+    padding: 3px;
+}
+.box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+/* ///////////////////////////  Main Content Container  and Personal Details page  ////////////////////////// */
+.main_container{
+    max-width: 100%;
+    height: 88vh;
+    z-index: 0;
+
+    overflow: hidden;
+}
+.details{
+    position: relative;
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+}
+.outline_box{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: rgb(235, 234, 234) solid 2px;
+    box-shadow: 0 1px 2px rgb(233, 233, 233);
+    border-top: none;
+    border-radius: 10px;
+}
+.outline_header{
+    width: 98%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: rgb(223, 221, 221) solid 2px;
+    border-top: none;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgb(218, 218, 218);
+
+}
+.outline_header p{
+    font-size: 1.5rem;
+    color: rgb(122, 122, 122);
+}
+.input_personalDetails{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+.profile_summary{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+}
+.profile_summary fieldset{
+    width: 91%;
+    height: 55px;
+    border: rgb(196, 192, 192) solid 1px;
+    border-radius: 3px;
+}
+.profile_summary legend{
+    margin-left: 15px;
+    color: rgb(133, 130, 130);
+    font-size: 13px;
+    padding-left: 4px;
+}
+.profile_summary input{
+    width: 95%;
+    margin-left: 12px;
+    height: 35px;
+    font-size: 15px;
+    border: none;
+}
+.profile_summary input:focus{
+    outline: none;
+}
+/* ///////////////////////////  designing coloumns  ///////////////////////// */
+.col{
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+.col fieldset{
+    width: 85%;
+    height: 25%;
+    border: rgb(202, 202, 202) solid 1px;
+    border-radius: 3px;
+    margin: 1.5%;
+}
+.col legend{
+    margin-left: 3%;
+    color: rgb(155, 155, 155);
+    padding: 2px;
+    font-size: 12px;
+}
+.col input{
+    width: 93%;
+    height: 22px;
+    font-size: 17px;
+    font-weight: 400;
+    margin-left: 14px;
+    color: rgb(156, 154, 154);
+    border: none;
+}
+.col input:focus{
+    outline: none;
+    color: rgb(68, 68, 68);
+}
+/* /////////////  Pagination Designing  //////////////////// */
+.pagination_container{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.btn{
+    width: 10%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #CE0F76;
+    color: white;
+    font-weight: 600;
+}
+.btn{
+    cursor: pointer;
+}
+.change_btn_color{
+    background-color: rgb(184, 184, 184);
+}
+.preview_btn{
+    background-color: rgb(14, 179, 143);
+}
+.add_button{
+    height: 45px;
+    height: 45px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 10px;
+}
+.add_button img{
+    width: 100%;
+    height: 100%;
+}
+.add_button:hover{
+    cursor: pointer;
+}
+/* ///////////////////////////////  Education and Experience Details Page  /////////////////////////////////// */
+.input_educationDetails{
+    width: 100%;
+    height: 65%;
+}
+.input_experienceDetails{
+    width: 100%;
+    height: 65%;
+    
+    /* border: black dotted 1px; */
+}
+.overflow_x{
+    overflow-x: hidden;
+}
+.col_type2{
+    width: 100%;
+    /* height: 50%; */
+}
+.col_box{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+hr{
+    border: rgb(226, 226, 226) solid 0.5px;
+    border-top: none;
+    width: 95%;
+    margin-left: 22px;
+}
+.col_type2 input{
+    width: 93%;
+    height: 20px;
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(156, 154, 154);
+    border: none;
+    padding-left: 10px;
+}
+.des_fieldset{
+    position: relative;
+    width: 89% !important;
+    height: 20px;
+    margin-left: 59px !important;
+}
+textarea{
+    height: 55px;
+    min-width: 89%;
+    margin-left: 59px;
+    padding: 5px;
+    border: solid rgb(172, 172, 172) 1px;
+    border-radius: 3px;
+    position: relative;
+    margin-bottom: 20px;
+}
+#textarea1{
+    z-index: 1;
+}
+textarea:focus{
+    outline: none;
+}
+textarea::placeholder{
+    color: rgb(202, 201, 201);
+}
+.col_type2 input:focus{
+    outline: none;
+    color: rgb(68, 68, 68);
+}
+.col_type2 fieldset{
+    width: 300px;
+    height: 40px;
+    border: rgb(177, 177, 177) solid 1px;
+    border-radius: 3px;
+    margin: 1.5%;
+}
+.col_type2 legend{
+    margin-left: 3%;
+    color: rgb(155, 155, 155);
+    padding: 2px;
+    font-size: 12px;
+}
+/* //////////////////////////  EXTRA DETAILS PAGE  ///////////////////////// */
+.input_extraDetails{
+    width: 100%;
+    height: 65%;
+}
+.skills_col, .interests_col{
+    width: 100%;
+    height: 50%;
+}
+.extraDetails_header{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    font-weight: 600;
+    color: rgb(133, 133, 133);
+}
+.extraDetails_header img{
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+}
+.extraDetails_container{
+    width: 100%;
+    height: 65%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+}
+.extraDetails_container input{
+    width: 80%;
+    height: 35px;
+    border: solid rgb(141, 141, 141) 1px;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+.extraDetails_container input:focus{
+    outline: none;
+}
+/* ///////////////////////////////////  MENU SLIDER  //////////////////////////////////// */
+.menu_slider{
+    width: 300px;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(2, 3, 0, 0.63);
+    z-index: 2;
+    transform: translateX(-300px);
+    transition: 0.5s;
+}
+.sliding_feature{
+    transform: translateX(0);
+}
+.back_btn_slider_box{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    border-bottom: rgb(153, 153, 153) solid 1px;
+}
+.all_resumes{
+    width: 100%;
+    height: 80%;
+    padding: 20px;
+    border-bottom: rgb(172, 169, 169) solid 1px;
+}
+.logout{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    /* border: white dotted 1px; */
+}
+/* //////////////////////////// */
+details{
+    color: white;
+}
+summary{
+    margin-bottom: 20px;
+}
+summary:hover{
+    cursor: pointer;
+}
+.all_resumes li{
+    padding: 15px;
+}
+.saved_resume_list div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.329);
+    border-radius: 10px;
+    padding-right: 10px;
+
+    /* border: white 1px dotted; */
+}
+/* //////// BACK button /////// */
+.slider_back_btn{
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    border: none;
+}
+.slider_back_btn img{
+    height: 100%;
+    width: 100%;
+}
+.slider_back_btn:hover{
+    cursor: pointer;
+}
+/* /////// Logout Window ///// */
+.logout_window{
+    height: 35px;
+    width: 35px;
+    background-color: transparent;
+    border: none;
+}
+.logout_window img{
+    height: 100%;
+    width: 100%;
+}
+/* ///////////////  SAVED RESUMES BOX  /////////////// */
+.del_resume{
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border: none;
+}
+.del_resume img{
+    width: 100%;
+    height: 100%;
+}
+.del_resume:hover{
+    cursor: pointer;
+    border: white solid 1px;
+}
+.resume_list_btn{
+    background-color: transparent;
+    border: none;
+}
+.resume_list_btn a{
+    font-weight: 100;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}

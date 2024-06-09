@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-family: serif;
+}
+body{
+    background-color: rgb(80, 79, 79);
+}
+.content {
+    width: 210mm; /* A4 width in mm */
+    height: 297mm;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+}
+/* //////////////////////////  PERSONAL DETAILS BOX  ////////////////////////// */
+.personal_details_box{
+    width: 100%;
+    height: 17%;
+    display: flex;
+    border-bottom: rgb(66, 66, 66) solid 6px;
+    background-color: rgba(235, 231, 231, 0.664);
+    color: rgb(66, 66, 66);
+}
+.box_1{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.fullName{
+    font-size: 2.5rem;
+    padding-bottom: 3%;
+    text-transform: uppercase;
+}
+.position{
+    font-size: 1.4rem;
+}
+.box_2{
+    width: 35%;
+    height: 100%;
+}
+.box_2 div{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.box_2 div img{
+    height: 85%;
+    padding-left: 6%;
+}
+/* /////////////////////////// MAIN CONTENT BOX ///////////////////// */
+.main_content_box{
+    width: 100%;
+    height: calc(100% - 17%);
+    color: rgb(109, 109, 109);
+    /* padding: 5%; */
+
+    /* border: dotted rgb(202, 0, 0) 1px; */
+}
+.main_content_innerBox{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    margin-top: 5%;
+
+    /* border: dotted rgb(202, 0, 0) 1px; */
+}
+/* ////// SUMMARY  ////////// */
+.summary_title{
+    width: 100%;
+    height: 5%;
+
+    /* border: black dotted 1px; */
+}
+.summary_title_innerBox{
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid rgb(155, 154, 154) 2px;
+
+    /* border: dotted rgb(202, 0, 0) 1px; */
+}
+.summary_title_innerBox p{
+    font-size: 1.5rem;
+}
+.summary{
+    width: 100%;
+    height: 13%;
+    /* border: black dotted 1px; */
+    font-size: 0.9rem;
+    padding: 1.8%;
+    text-align: center;
+}
+/* ///////////////  Main Content  /////////////// */
+.content_box{
+    width: 100%;
+    height: 82%;
+    display: flex;
+
+    /* border: dotted green 1px; */
+}
+.coloumn_box_1{
+    width: 45%;
+    height: 100%;
+    border-right: solid rgb(155, 154, 154) 2px;
+    
+    /* border: black dotted 1px; */
+}
+.coloumn_box_2{
+    width: 55%;
+    height: 100%;
+    padding-left: 4%;
+    padding-top: 2%;
+
+    /* border: black dotted 1px; */
+}
+/* //////////////  EDUCATION, SKILLS and INTERESTS  ////////////////// */
+.education{
+    width: 100%;
+    height: 40%;
+    padding-top: 5%;
+
+    /* border: blue 1px solid; */
+}
+.skills{
+    width: 100%;
+    height: 30%;
+    padding-top: 5%;
+
+    /* border: blue 1px solid; */
+
+}
+.interests{
+    width: 100%;
+    height: 30%;
+    padding-top: 5%;
+
+    /* border: blue 1px solid; */
+
+}
+.education .title_box{
+    height: 11%;
+}
+.title_box{
+    height: 15%;
+    width: 70%;
+    font-size: 1.4rem;
+    border-bottom: solid rgb(155, 154, 154) 2px; 
+
+    /* border: black solid 1px; */
+
+}
+.education_content, .skills_content, .interests_content{
+    width: 93%;
+    height: 85%;
+    padding-top: 5%;
+
+    /* border: black solid 1px; */
+}
+/* .school_box{
+    border: black dotted 1px;
+} */
+.education_content div{
+    width: 100%;
+    /* height: 50%; */
+
+    /* border: black dotted 1px; */
+}
+.school_name{
+    font-size: 1rem;
+}
+.course_name{
+    font-size: 0.8rem;
+}
+.duration{
+    font-size: 0.8rem;
+}
+.education_content div div{
+    width: 100%;
+    height: 25%;
+    /* border: green solid 1px; */
+}
+.skills_content div, .interests_content div{
+    width: 100%;
+    /* height: 15%; */
+    font-size: 0.8rem;
+    /* border: green solid 1px; */
+}
+.bullets_box{
+    display: flex;
+} 
+span {
+    margin-right: 0.8rem;
+}
+/* ///////////////////  COLOUMN 2 Experience //////////////// */
+.experience_title{
+    width: 95%;
+    height: 4.5%;
+    font-size: 1.4rem;
+    border-bottom: solid rgb(155, 154, 154) 2px;
+
+    /* border: black dotted 1px; */
+}
+.experience_box{
+    width: 100%;
+    /* height: 32%; */
+    padding-top: 3.5%;
+
+    /* border: black dotted 1px; */
+}
+.position_name{
+    width: 100%;
+    height: 10%;
+
+    /* border: black dotted 1px; */
+}
+.company_name_box{
+    width: 100%;
+    height: 10%;
+    display: flex;
+
+    /* border: black dotted 1px; */
+}
+.company_name_box div{
+    height: 100%;
+    padding-right: 1%;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+
+    /* border: black dotted 1px; */
+}
+.tenure{
+    padding-left: 1%;
+    border-left: solid rgb(109, 109, 109) 1px;
+}
+.job_responsibility{
+    width: 100%;
+    height: 80%;
+    padding-top: 5%;
+
+    /* border: black dotted 1px; */
+}
+.job_box{
+    width: 100%;
+    display: flex;
+    font-size: 0.8rem;
+    /* border: black dotted 1px; */
+}
+
+/* ///////////////  DOWNLOAD BUTTON //////////// */
+.generate-pdf{
+    background-color: rgba(245, 222, 179, 0);
+    border: none;
+    position: relative;
+    bottom: 10dvh;
+    left: 165dvh;
+    height: 65px;
+    width: 65px;
+}
+.generate-pdf img{
+    height: 50px;
+    width: 50px;
+}
+.generate-pdf:hover{
+    cursor: pointer;
+    border: rgb(209, 208, 208) solid 2px;
+    border-radius: 10px;
+}
+
+/* ///////////////  SAVE RESUME  //////////////// */
+details{
+    position: relative;
+    bottom: 184vh;
+    left: 166dvh;
+    width: 50px;
+    height: 50px;
+    color: rgba(255, 255, 255, 0);
+}
+details img{
+    height: 100%;
+    width: 100%;
+}
+.save_resume_box{
+    height: 65px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.save_resume_box input{
+    height: 30px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+.save_resume_box button{
+    height: 30px;
+    width: 45px;
+    border-radius: 10px;
+    border: none;
+    transition: background-color 0.3s;
+}
