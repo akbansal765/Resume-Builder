@@ -51,15 +51,15 @@ const previewFunction = function(resume){
                     <div class="linkedin">${resume.linkedinLink}</div>
                     <div class="phoneNumber">
                         <p>${resume.phoneNumber}</p>
-                        <img src="/images/phone-call.png" alt="phoneNumber">
+                        <img src="../images/phone-call.png" alt="phoneNumber">
                     </div>
                     <div class="email">
                         <p>${resume.email}</p>
-                        <img src="/images/email.png" alt="email">
+                        <img src="../images/email.png" alt="email">
                     </div>
                     <div class="address">
                         <p>${resume.address}</p>
-                        <img src="/images/location.png" alt="">
+                        <img src="../images/location.png" alt="">
                     </div>
                 </div>
             </div>

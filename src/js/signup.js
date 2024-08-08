@@ -28,7 +28,7 @@ signupBtn.addEventListener('click', function(){
         // storing full name of the user for the welcome message in main window
         localStorage.setItem('fullName', JSON.stringify(_fullname));
 
-        window.open('/main_window.html');
+        window.open('../html/main_window.html');
 
 
     }

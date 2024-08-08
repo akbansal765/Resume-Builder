@@ -79,7 +79,7 @@ previewBtn.addEventListener('click', function(){
     localStorage.removeItem('preview_value');
 
     // opening preview window after removing the preview value
-    window.open('preview_window.html');
+    window.open('../html/preview_window.html');
 
 });
 
@@ -192,9 +192,9 @@ resumeList.forEach(resume => {
 
     const markup = `
          <div class="saved_resume_box">
-          <li><button class="resume_list_btn" value="${resume}"><a href="preview_window.html" target="_blank">${resume}</a></button></li>
+          <li><button class="resume_list_btn" value="${resume}"><a href="../html/preview_window.html" target="_blank">${resume}</a></button></li>
           <button class="del_resume" value="${resume}">
-             <img src="/images/trash.png" alt="menu">
+             <img src="../images/trash.png" alt="menu">
           </button>
          </div>
        `;
