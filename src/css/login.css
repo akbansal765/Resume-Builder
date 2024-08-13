@@ -15,13 +15,13 @@
 }
 .container{
     width: 45%;
-    height: 55%;
+    height: 45%;
     box-shadow: 0 0 8px black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 2%;
     background-color: rgb(243, 243, 243);
 }
 .header{
@@ -37,8 +37,8 @@
     font-size: 2rem;
 }
 input{
-    width: 530px;
-    height: 40px;
+    width: 40vw;
+    height: 6vh;
     padding-left: 10px;
     margin-top: 5px;
 }
@@ -46,14 +46,41 @@ input::placeholder{
     font-size: 18px;
 }
 .login_btn{
-    width: 530px;
-    height: 42px;
+    width: 40vw;
+    height: 6vh;
     background-color: black;
     color: white;
-    font-size: 20px;
+    font-size: 1.3rem;
     border: none;
 }
 .login_btn:hover{
     cursor: pointer;
     background-color: rgb(54, 54, 54);
+}
+/* /////////  RESPONSIVENESS  //////////// */
+@media (max-width: 700px){
+    .container{
+        width: 86%;
+        height: 37%;
+    }
+    input{
+        width: 76vw;
+    }
+    .login_btn{
+        width: 76vw;
+    }
+}
+@media (max-height: 400px) and (orientation: landscape){
+    .container{
+        height: 57%;
+    }
+    input{
+        height: 8vh;
+    }
+    .login_btn{
+        height: 8vh;
+    }
+    .header p{
+        font-size: 1.5rem;
+    }
 }

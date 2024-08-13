@@ -26,8 +26,8 @@
 }
 
 .btn{
-    width: 500px;
-    height: 40px;
+    width: 45vw;
+    height: 4vw;
     background-color: #4B4646;
     border: none;
     border-radius: 5px;
@@ -37,4 +37,48 @@
 }
 .btn:hover{
     cursor: pointer;
+}
+/* ///////////// RESPONSIVENESS /////////////// */
+@media (max-width: 450px){
+ .white_container{
+    height: 14%;
+ }
+.btn{
+    height: 8vw;
+}
+}
+
+@media (min-width: 450px) and (max-width: 700px){
+ .white_container{
+    height: 12%;
+ }
+.btn{
+    width: 42vw;
+    height: 6vw;
+}
+}
+@media (min-width: 701px) and (max-width: 900px){
+ .white_container{
+    height: 12%;
+ }
+.btn{
+    width: 42vw;
+    height: 5vw;
+}
+}
+@media (min-width: 901px) and (max-width: 1200px){
+ .white_container{
+    height: 12%;
+ }
+}
+@media (min-width: 1201px) and (max-width: 1300px){
+ .white_container{
+    height: 15%;
+ }
+}
+
+@media (max-height: 450px) and (orientation: landscape){
+    .white_container{
+        height: 30%;
+     }
 }

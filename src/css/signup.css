@@ -37,8 +37,8 @@
     font-size: 2rem;
 }
 input{
-    width: 530px;
-    height: 40px;
+    width: 40vw;
+    height: 6vh;
     padding-left: 10px;
     margin-top: 5px;
 }
@@ -46,8 +46,8 @@ input::placeholder{
     font-size: 18px;
 }
 .signup_btn{
-    width: 530px;
-    height: 42px;
+    width: 40vw;
+    height: 6vh;
     background-color: black;
     color: white;
     font-size: 20px;
@@ -56,4 +56,54 @@ input::placeholder{
 .signup_btn:hover{
     cursor: pointer;
     background-color: rgb(54, 54, 54);
+}
+/* /////////  RESPONSIVENESS  //////////// */
+@media (max-width: 700px){
+   .container{
+    width: 87%;
+    height: 44%;
+    padding-bottom: 18px;
+   }
+  .header p{
+    font-size: 1rem;
+  }
+  input{
+    width: 76vw;
+    height: 4vh;
+  }
+  .signup_btn{
+    width: 76vw;
+    height: 5vh;
+  }
+}
+@media (min-width: 701px) and (max-width: 1000px) {
+   .container{
+    width: 63%;
+   }
+  input{
+    width: 58vw;
+    height: 7vh;
+    margin-top: 4px;
+  }
+  .signup_btn{
+    width: 58vw;
+    height: 7vh;
+  }
+}
+@media (max-height: 400px) and (orientation: landscape){
+    .container{
+        width: 63%;
+        height: 62%;
+        font-size: 0.8rem;
+        padding-bottom: 10px;
+    }
+    input{
+        width: 59vw;
+        height: 6vh;
+    }
+    .signup_btn{
+        width: 59vw;
+        height: 6vh;
+        font-size: 0.8rem;
+    }
 }

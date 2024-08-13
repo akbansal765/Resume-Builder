@@ -17,6 +17,5 @@ loginBtn.addEventListener('click', function(){
     if(!user) return;
     
     // if the username and password matched redirect user to main window
-    if(_username === user.username && _password === user.password) window.open('/main_window.html');
-
+    if(_username === user.username && _password === user.password) window.open('../html/main_window.html');
 });

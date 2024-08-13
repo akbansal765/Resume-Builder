@@ -17,8 +17,8 @@
     position: relative;
 }
 .menu_btn, .profile_btn{
-    height: 45px;
-    width: 45px;
+    height: 2.5rem;
+    width: 2.5rem;
     background-color: rgba(255, 255, 255, 0);
     border: none;
     margin: 15px;
@@ -30,15 +30,73 @@
 }
 .menu_btn:hover{
     cursor: pointer;
-    padding: 3px;
+    padding: 3%;
 }
 .box2{
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 25px;
+    font-size: 1.5rem;
 }
+/* ///////////  RESPONSIVENESS  //////////// */
+@media (max-width: 485px){
+    .navbar{
+        height: 8vh;
+    }
+    .menu_btn, .profile_btn{
+        height: 1.4rem;
+        width: 1.4rem;
+    }
+    .box2{
+        font-size: 1rem;
+    }
+    .outline_box{
+        width: 91%;
+        height: 65%;
+    }
+}
+@media (min-width: 486px) and (max-width: 700px){
+    .navbar{
+        height: 9vh;
+    }
+    .menu_btn, .profile_btn{
+        height: 1.6rem;
+        width: 1.6rem;
+    }
+    .box2{
+        font-size: 1.1rem;
+    }
+    .outline_box{
+        width: 91% !important;
+        height: 65%;
+    }
+}
+@media (min-width: 701px) and (max-width: 1050px){
+    .navbar{
+        height: 10vh;
+    }
+    .menu_btn, .profile_btn{
+        height: 1.7rem;
+        width: 1.7rem;
+    }
+    .box2{
+        font-size: 1.3rem;
+    }
+}
+@media (max-height: 430px) and (orientation: landscape){
+    .navbar{
+        height: 11vh;
+    }
+    .menu_btn, .profile_btn{
+        height: 1.4rem;
+        width: 1.4rem;
+    }
+    .box2{
+        font-size: 1rem;
+    }
+}
+
 /* ///////////////////////////  Main Content Container  and Personal Details page  ////////////////////////// */
 .main_container{
     max-width: 100%;
@@ -104,7 +162,7 @@
 .profile_summary legend{
     margin-left: 15px;
     color: rgb(133, 130, 130);
-    font-size: 13px;
+    font-size: 0.8rem;
     padding-left: 4px;
 }
 .profile_summary input{
@@ -138,7 +196,7 @@
     margin-left: 3%;
     color: rgb(155, 155, 155);
     padding: 2px;
-    font-size: 12px;
+    font-size: 0.7rem;
 }
 .col input{
     width: 93%;
@@ -197,6 +255,123 @@
 .add_button:hover{
     cursor: pointer;
 }
+/* ///////////  RESPONSIVENESS  //////////// */
+@media (max-width: 485px){
+    .outline_box{
+        width: 91%;
+        height: 65%;
+    }
+    .col fieldset {
+        width: 100%;
+        height: 22%;
+    }
+    .col input{
+        width: 89%;
+    }
+    .profile_summary input{
+        height: 29px;
+    }
+    .profile_summary fieldset {
+        width: 94%;
+        height: 60px;
+    }
+    .btn {
+        width: 18%;
+        height: 29%;
+        font-size: 0.7rem;
+    }
+    .col legend{
+        font-size: 0.5rem;
+    }
+    .profile_summary legend {
+        font-size: 0.5rem;
+    }
+}
+@media (min-width: 486px) and (max-width: 700px){
+    .outline_box{
+        width: 94% !important;
+        height: 75%;
+    }
+    .col fieldset {
+        width: 100%;
+        height: 24%;
+    }
+    .col input{
+        width: 89%;
+    }
+    .profile_summary input{
+        height: 29px;
+    }
+    .profile_summary fieldset {
+        width: 96%;
+        height: 60px;
+    }
+    .btn {
+        width: 13%;
+        height: 35%;
+        font-size: 0.8rem;
+    }
+}
+@media (min-width: 701px) and (max-width: 1050px){
+    .outline_box{
+        width: 94% !important;
+        height: 75%;
+    }
+    .col fieldset {
+        width: 100%;
+        height: 24%;
+    }
+    .col input{
+        width: 89%;
+    }
+    .profile_summary input{
+        height: 29px;
+    }
+    .profile_summary fieldset {
+        width: 96%;
+        height: 60px;
+    }
+    .btn {
+        width: 13%;
+        height: 35%;
+        font-size: 0.9rem;
+    }
+}
+@media (max-height: 430px) and (orientation: landscape){
+    .outline_box{
+        width: 85% !important;
+        height: 85%;
+    }
+    .col fieldset {
+        width: 100%;
+        height: 27%;
+    }
+    .col input{
+        width: 89%;
+        height: 18px;
+    }
+    .profile_summary input{
+        height: 29px;
+    }
+    .profile_summary fieldset {
+        width: 96%;
+        height: 48px;
+    }
+    .btn {
+        width: 13%;
+        height: 34%;
+        font-size: 0.7rem;
+    }
+    .col legend{
+        font-size: 0.5rem;
+    }
+    .profile_summary legend {
+        font-size: 0.5rem;
+    }
+    .outline_header p {
+        font-size: 1rem;
+}
+}
 /* ///////////////////////////////  Education and Experience Details Page  /////////////////////////////////// */
 .input_educationDetails{
     width: 100%;
@@ -244,7 +419,7 @@ hr{
     position: relative;
     width: 89% !important;
     height: 20px;
-    margin-left: 59px !important;
+    margin-left: 5.5% !important;
 }
 textarea{
     height: 55px;
@@ -280,7 +455,115 @@ textarea::placeholder{
     margin-left: 3%;
     color: rgb(155, 155, 155);
     padding: 2px;
-    font-size: 12px;
+    font-size: 0.7rem;
+}
+/* ////////////////  RESPONSIVENESS  /////////////// */
+@media (max-width: 485px){
+    .des_fieldset {
+        width: 97% !important;
+        margin-left: 1.5% !important;
+    }
+    .col_type2 fieldset {
+        width: 300px;
+        height: 37px;
+    }
+    .col_type2 legend {
+        padding: 0px;
+        font-size: 0.5rem;
+    }
+    .input_educationDetails {
+        height: 70%;
+    }
+    .pagination_container{
+        height: 22%;
+    }
+    textarea {
+        height: 44px;
+        min-width: 97%;
+        margin-left: 5px;
+    }
+}
+@media (min-width: 486px) and (max-width: 700px){
+    .des_fieldset {
+        width: 97% !important;
+        margin-left: 1.5% !important;
+    }
+    .col_type2 fieldset {
+        width: 300px;
+        height: 42px;
+    }
+    .col_type2 legend {
+        padding: 0px;
+        font-size: 0.5rem;
+    }
+    .input_educationDetails {
+        height: 80%;
+    }
+    .pagination_container{
+        height: 22%;
+    }
+    textarea {
+        height: 44px;
+        min-width: 97%;
+        margin-left: 7px;
+    }
+}
+@media (min-width: 701px) and (max-width: 1050px){
+    .des_fieldset {
+        width: 97% !important;
+        margin-left: 1.5% !important;
+    }
+    .col_type2 fieldset {
+        width: 300px;
+        height: 42px;
+    }
+    .col_type2 legend {
+        padding: 0px;
+        font-size: 0.5rem;
+    }
+    .input_educationDetails {
+        height: 80%;
+    }
+    .pagination_container{
+        height: 22%;
+    }
+    textarea {
+        height: 44px;
+        min-width: 97%;
+        margin-left: 10px;
+    }
+}
+@media (max-height: 430px) and (orientation: landscape){
+    .des_fieldset {
+        width: 97% !important;
+        margin-left: 1.5% !important;
+    }
+    .col_type2 fieldset {
+        width: 300px;
+        height: 30px;
+    }
+    .col_type2 legend {
+        padding: 0px;
+        font-size: 0.5rem;
+    }
+    .input_educationDetails {
+        height: 76%;
+    }
+    .pagination_container{
+        height: 22%;
+    }
+    textarea {
+        height: 35px;
+        min-width: 97.5%;
+        margin-left: 7px;
+    }
+    .col_box{
+        margin-top: 0px;
+    }
+    .add_button img {
+        width: 84%;
+        height: 84%;
+    }
 }
 /* //////////////////////////  EXTRA DETAILS PAGE  ///////////////////////// */
 .input_extraDetails{
@@ -323,18 +606,26 @@ textarea::placeholder{
 .extraDetails_container input:focus{
     outline: none;
 }
+@media (max-height: 430px) and (orientation: landscape){
+    .extraDetails_container input {
+        height: 25px;
+    }
+    .input_extraDetails p{
+        font-size: 0.8rem;
+    }
+}
 /* ///////////////////////////////////  MENU SLIDER  //////////////////////////////////// */
 .menu_slider{
-    width: 300px;
+    width: 23vw;
     height: 100vh;
     position: absolute;
     background-color: rgba(2, 3, 0, 0.63);
     z-index: 2;
-    transform: translateX(-300px);
+    transform: translateX(-23vw);
     transition: 0.5s;
 }
 .sliding_feature{
-    transform: translateX(0);
+    transform: translateX(0vw);
 }
 .back_btn_slider_box{
     width: 100%;
@@ -350,6 +641,7 @@ textarea::placeholder{
     height: 80%;
     padding: 20px;
     border-bottom: rgb(172, 169, 169) solid 1px;
+    overflow-x: hidden;
 }
 .logout{
     width: 100%;
@@ -431,8 +723,143 @@ summary:hover{
 }
 .resume_list_btn a{
     font-weight: 100;
-    font-size: 18px;
+    font-size: 1.1rem;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
 }
+@media (max-width: 485px){
+    .menu_slider{
+      width: 45vw;
+      transform: translateX(-45vw);
+    }
+    .slider_back_btn img{
+     height: 64%;
+     width: 64%;
+    }
+    .logout_window img{
+     height: 64%;
+     width: 64%;
+    }
+    .back_btn_slider_box {
+        height: 7%;
+    }
+    .all_resumes {
+        height: 83%;
+    }
+    .sliding_feature{
+        transform: translateX(0vw);
+    }
+    .resume_list_btn a{
+        font-size: 0.7rem;
+    }
+    .del_resume img {
+        width: 70%;
+        height: 75%;
+    }
+    .all_resumes li {
+        padding: 8px;
+    }
+ }
+ @media (min-width: 486px) and (max-width: 700px){
+    .menu_slider{
+      width: 45vw;
+      transform: translateX(-45vw);
+    }
+    .slider_back_btn img{
+     height: 64%;
+     width: 64%;
+    }
+    .logout_window img{
+     height: 64%;
+     width: 64%;
+    }
+    .back_btn_slider_box {
+        height: 7%;
+    }
+    .all_resumes {
+        height: 83%;
+    }
+    .sliding_feature{
+        transform: translateX(0vw);
+    }
+    .resume_list_btn a{
+        font-size: 0.7rem;
+    }
+    .del_resume img {
+        width: 70%;
+        height: 75%;
+    }
+    .all_resumes li {
+        padding: 8px;
+    }
+ }
+ @media (min-width: 701px) and (max-width: 1050px){
+    .menu_slider{
+      width: 35vw;
+      transform: translateX(-35vw);
+    }
+    .slider_back_btn img{
+     height: 75%;
+     width: 75%;
+    }
+    .logout_window img{
+     height: 70%;
+     width: 70%;
+    }
+    .back_btn_slider_box {
+        height: 9%;
+    }
+    .all_resumes {
+        height: 81%;
+    }
+    .sliding_feature{
+        transform: translateX(0vw);
+    }
+    .resume_list_btn a{
+        font-size: 0.8rem;
+    }
+    .del_resume img {
+        width: 70%;
+        height: 75%;
+    }
+    .all_resumes li {
+        padding: 10px;
+    }
+ }
+ @media (max-height: 430px) and (orientation: landscape){
+    .menu_slider{
+        width: 35vw;
+        transform: translateX(-35vw);
+      }
+      .slider_back_btn img{
+       height: 64%;
+       width: 64%;
+      }
+      .logout_window img{
+       height: 60%;
+       width: 60%;
+      }
+      .back_btn_slider_box {
+          height: 10%;
+      }
+      .all_resumes {
+          height: 80%;
+      }
+      .sliding_feature{
+          transform: translateX(0vw);
+      }
+      .resume_list_btn a{
+          font-size: 0.7rem;
+      }
+      .del_resume img {
+          width: 70%;
+          height: 75%;
+      }
+      .all_resumes li {
+          padding: 8px;
+      }
+      summary{
+        font-size: 0.8rem;
+      }
+ }
