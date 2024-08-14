@@ -32,7 +32,7 @@
     border: none;
     border-radius: 5px;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin: 5px;
 }
 .btn:hover{
@@ -45,40 +45,46 @@
  }
 .btn{
     height: 8vw;
+    font-size: 1rem;
 }
 }
 
 @media (min-width: 450px) and (max-width: 700px){
  .white_container{
-    height: 12%;
+    height: 18%;
  }
 .btn{
     width: 42vw;
     height: 6vw;
+    font-size: 1rem;
 }
 }
 @media (min-width: 701px) and (max-width: 900px){
  .white_container{
-    height: 12%;
+    height: 18%;
  }
 .btn{
     width: 42vw;
     height: 5vw;
+    font-size: 1.3rem;
 }
 }
 @media (min-width: 901px) and (max-width: 1200px){
  .white_container{
-    height: 12%;
+    height: 19%;
  }
 }
 @media (min-width: 1201px) and (max-width: 1300px){
  .white_container{
-    height: 15%;
+    height: 20%;
  }
 }
 
 @media (max-height: 450px) and (orientation: landscape){
     .white_container{
         height: 30%;
+     }
+     .btn{
+        font-size: 1.2rem;
      }
 }

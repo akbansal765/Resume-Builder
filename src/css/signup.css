@@ -23,6 +23,7 @@
     align-items: center;
     padding-bottom: 30px;
     background-color: rgb(243, 243, 243);
+    font-size: 1.3rem;
 }
 .header{
     width: 100%;
@@ -34,7 +35,7 @@
 }
 .header p{
     color: rgb(189, 189, 189);
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 input{
     width: 40vw;
@@ -50,7 +51,7 @@ input::placeholder{
     height: 6vh;
     background-color: black;
     color: white;
-    font-size: 20px;
+    font-size: 1.5rem;
     border: none;
 }
 .signup_btn:hover{
@@ -63,9 +64,10 @@ input::placeholder{
     width: 87%;
     height: 44%;
     padding-bottom: 18px;
+    font-size: 1rem;
    }
   .header p{
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   input{
     width: 76vw;
@@ -74,21 +76,34 @@ input::placeholder{
   .signup_btn{
     width: 76vw;
     height: 5vh;
+    font-size: 1rem;
+  }
+  input::placeholder{
+    font-size: 15px;
   }
 }
 @media (min-width: 701px) and (max-width: 1000px) {
-   .container{
-    width: 63%;
-   }
-  input{
-    width: 58vw;
-    height: 7vh;
-    margin-top: 4px;
-  }
-  .signup_btn{
-    width: 58vw;
-    height: 7vh;
-  }
+    .container{
+        width: 87%;
+        height: 48%;
+        padding-bottom: 18px;
+        font-size: 1.1rem;
+       }
+      .header p{
+        font-size: 1.4rem;
+      }
+      input{
+        width: 78vw;
+        height: 5vh;
+      }
+      .signup_btn{
+        width: 78vw;
+        height: 5vh;
+        font-size: 1.2rem;
+      }
+      input::placeholder{
+        font-size: 15px;
+      }
 }
 @media (max-height: 400px) and (orientation: landscape){
     .container{
@@ -106,4 +121,7 @@ input::placeholder{
         height: 6vh;
         font-size: 0.8rem;
     }
+    input::placeholder{
+        font-size: 12px;
+      }
 }
