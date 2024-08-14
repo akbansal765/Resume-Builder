@@ -5,14 +5,253 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <script defer src="../js/script.js"></script>
-    <title>Signup/Login</title>
+    <title>Resume Builder</title>
 </head>
 <body>
-    <div class="background">
-        <div class="white_container">
-            <a href="signup.html" target="_blank"><button class="btn">Sign up</button></a>
-            <a href="login.html" target="_blank"><button class="btn">Log in</button></a>
+    <div class="menu_slider">
+        <div class="back_btn_slider_box">
+            <button class="slider_back_btn">
+                <img src="../images/left-arrow.png" alt="">
+            </button>
+        </div>
+        <div class="all_resumes">
+            <details>
+                <summary>My Resumes</summary>
+                <ul class="saved_resume_list">
+                    <!-- <li>Resume1</li>
+                    <li>Resume2</li>
+                    <li>Resume3</li>
+                    <li>Resume4</li>
+                    <li>Resume5</li> -->
+                </ul>
+            </details>
+        </div>
+        <div class="logout">
+            <button class="logout_window">
+                <a href="#"><img src="../images/shutdown.png" alt=""></a>
+            </button>
         </div>
     </div>
+    <nav class="navbar">
+        <div class="box1">
+            <button class="menu_btn">
+                <img src="../images/menu.png" alt="menu">
+            </button>
+        </div>
+        <div class="box2">
+            <span class="welcomeMsg">Welcome, Akash Bansal</span>
+            <button class="profile_btn">
+                <img src="../images/user.png" alt="">
+            </button>
+        </div>
+    </nav>
+
+<form>
+    <div class="main_container">
+        <!-- ////////////////////////////////////  PERSONAL DETAILS  ///////////////////////////// -->
+        <div class="personal_details details">
+            <div class="outline_box">
+                <div class="outline_header">
+                    <p>Personal Details</p>
+                </div>
+                <div class="input_personalDetails">
+                    <div class="col">
+                        <fieldset>
+                            <legend>First name *</legend>
+                            <input class="input_firstName" type="text" name="firstName">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Email *</legend>
+                            <input class="input_email" type="email" name="email">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Address</legend>
+                            <input class="input_address" type="text" name="address">
+                        </fieldset>
+                    </div>
+                    <div class="col">
+                        <fieldset>
+                            <legend>Last name *</legend>
+                            <input class="input_lastName" type="text" name="lastName">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Phone number</legend>
+                            <input class="input_phoneNumber" type="number" name="phoneNumber">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Linkedin</legend>
+                            <input class="input_linkedin" type="text" name="linkedinLink">
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div class="profile_summary">
+                    <fieldset>
+                        <legend>Profile Summary *</legend>
+                        <input class="input_profile_summary" type="text" name="profileSummary">
+                    </fieldset>
+                </div>
+                <div class="pagination_container">
+                    <button type="button" class="next btn">NEXT</button>
+                </div>
+            </div>
+        </div>
+<!-- //////////////////////////////////  EDUCATION DETAILS  ////////////////////////////////////////// -->
+        <div class="education_details details">
+            <div class="outline_box">
+                <div class="outline_header">
+                    <p>Education Details</p>
+                </div>
+                <div class="input_educationDetails">
+                    <div class="col_type2">
+                        <div class="col_box">
+                            <fieldset>
+                                <legend>School/College/University *</legend>
+                                <input class="input_company" type="text" name="school1">
+                            </fieldset>
+                            <fieldset>
+                                <legend>Class/Course *</legend>
+                                <input class="input_position" type="text" name="course1">
+                            </fieldset>
+                            <fieldset>
+                                <legend>Duration Year *</legend>
+                                <input class="input_duration" type="text" name="duration1">
+                            </fieldset>
+                        </div>
+                          
+                        <fieldset class="des_fieldset">
+                            <legend class="des_legend">Description *</legend>
+                            <input class="input_description" type="text" name="description1">
+                        </fieldset>
+                    </div>
+                    <hr>
+                    <div class="col_type2 education_2">
+                        <div class="col_box">
+                            <fieldset>
+                                <legend>School/College/University *</legend>
+                                <input class="input_company" type="text" name="school2">
+                            </fieldset>
+                            <fieldset>
+                                <legend>Class/Course *</legend>
+                                <input class="input_position" type="text" name="course2">
+                            </fieldset>
+                            <fieldset>
+                                <legend>Duration Year *</legend>
+                                <input class="input_duration" type="text" name="duration2">
+                            </fieldset>
+                        </div>
+
+                        <fieldset class="des_fieldset">
+                            <legend class="des_legend">Description *</legend>
+                            <input class="input_description" type="text" name="description2">
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="pagination_container">
+                    <button type="button" class="back btn change_btn_color">BACK</button>
+                    <button type="button" class="add_education add_button">
+                        <img src="../images/notes.png" alt="">
+                    </button>
+                    <button type="button" class="next btn">NEXT</button>
+                </div>
+            </div>
+        </div>
+
+<!-- ////////////////////////////////////  EXPERIENCE DETAILS  ////////////////////////////////////// -->
+        <div class="experience_details details">
+            <div class="outline_box">
+                <div class="outline_header">
+                    <p>Experience Details</p>
+                </div>
+                <div class="input_experienceDetails">
+                    <div class="col_type2">
+                        <div class="col_box">
+                            <fieldset>
+                                <legend>Institute/Organisation *</legend>
+                                <input class="input_company" type="text" name="company1">
+                            </fieldset>
+                            <fieldset>
+                                <legend>Position *</legend>
+                                <input class="input_position" type="text" name="position1">
+                            </fieldset>
+                            <fieldset>
+                                <legend>Duration</legend>
+                                <input class="input_duration" type="text" name="tenure1">
+                            </fieldset>
+                        </div>
+                        <textarea id="textarea1" placeholder="Job Responsibilities :-" name="jobResponsibilities_1"></textarea>
+                    </div>
+                    <hr>
+                    <div class="col_type2 experience_2">
+                        <div class="col_box">
+                            <fieldset>
+                                <legend>Institute/Organisation *</legend>
+                                <input class="input_company" type="text" name="company2">
+                            </fieldset>
+                            <fieldset>
+                                <legend>Position *</legend>
+                                <input class="input_position" type="text" name="position2">
+                            </fieldset>
+                            <fieldset>
+                                <legend>Duration</legend>
+                                <input class="input_duration" type="text" name="tenure2">
+                            </fieldset>
+                        </div>
+                        <textarea placeholder="Job Responsibilities :-" name="jobResponsibilities_2"></textarea>
+                    </div>
+                </div>
+                <div class="pagination_container">
+                    <button type="button" class="back btn change_btn_color">BACK</button>
+                    <button type="button" class="add_experience add_button">
+                        <img src="../images/notes.png" alt="">
+                    </button>
+                    <button type="button" class="next btn">NEXT</button>
+                </div>
+            </div>
+        </div>
+<!-- //////////////////////////////  EXTRA DETAILS  ////////////////////////// -->
+        <div class="extra_details details">
+            <div class="outline_box">
+                <div class="outline_header">
+                    <p>Extra Details</p>
+                </div>
+                <div class="input_extraDetails">
+                    <div class="skills_col">
+                        <div class="extraDetails_header">
+                            <img src="../images/checked.png" alt="">
+                            <p>Skills/Languages</p>
+                        </div>
+                        <div class="extraDetails_container">
+                            <input type="text" placeholder="Skill 1" name="skill_1">
+                            <input type="text" placeholder="Skill 2" name="skill_2">
+                            <input type="text" placeholder="Skill 3" name="skill_3">
+                            <input type="text" placeholder="Skill 4" name="skill_4">
+                            <input type="text" placeholder="Skill 5" name="skill_5">
+                            <input type="text" placeholder="Skill 6" name="skill_6">
+                        </div>
+                    </div>
+                    <div class="interests_col">
+                        <div class="extraDetails_header">
+                            <img src="../images/checked.png" alt="">
+                            <p>Interests</p>
+                        </div>
+                        <div class="extraDetails_container">
+                            <input type="text" placeholder="Interest 1" name="interest_1">
+                            <input type="text" placeholder="Interest 2" name="interest_2">
+                            <input type="text" placeholder="Interest 3" name="interest_3">
+                            <input type="text" placeholder="Interest 4" name="interest_4">
+                            <input type="text" placeholder="Interest 5" name="interest_5">
+                            <input type="text" placeholder="Interest 6" name="interest_6">
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination_container">
+                    <button type="button" class="back btn change_btn_color">BACK</button>
+                    <button type="submit" class="preview_btn btn">PREVIEW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
 </body>
 </html>
