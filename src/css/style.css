@@ -84,6 +84,30 @@
         font-size: 1.3rem;
     }
 }
+@media (min-width: 1051px) and (max-width: 1300px){
+    .navbar{
+        height: 11vh;
+    }
+    .menu_btn, .profile_btn{
+        height: 1.9rem;
+        width: 1.9rem;
+    }
+    .box2{
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 1301px) and (max-width: 1550px){
+    .navbar{
+        height: 12vh;
+    }
+    .menu_btn, .profile_btn{
+        height: 2rem;
+        width: 2rem;
+    }
+    .box2{
+        font-size: 1.5rem;
+    }
+}
 @media (max-height: 450px) and (orientation: landscape){
     .navbar{
         height: 11vh;
@@ -376,6 +400,86 @@
         height: 50%;
     }
 }
+@media (min-width: 1051px) and (max-width: 1300px){
+    .outline_box{
+        width: 94% !important;
+        height: 75%;
+    }
+    .outline_header p{
+        font-size: 1.6rem;
+    }
+    .col fieldset {
+        width: 100%;
+        height: 26%;
+    }
+    .col input{
+        width: 89%;
+        height: 28px;
+        font-size: 1rem;
+    }
+    .col legend{
+        font-size: 0.9rem;
+    }
+    .profile_summary input{
+        margin-top: 0.3rem;
+        height: 32px;
+    }
+    .profile_summary fieldset {
+        width: 98%;
+        height: 66px;
+    }
+    .btn {
+        width: 10%;
+        height: 35%;
+        font-size: 0.9rem;
+    }
+    .profile_summary legend {
+        font-size: 0.9rem;
+    }
+    .add_button{
+        height: 55%;
+    }
+}
+@media (min-width: 1301px) and (max-width: 1550px){
+    .outline_box{
+        width: 90% !important;
+        height: 75%;
+    }
+    .outline_header p{
+        font-size: 1.7rem;
+    }
+    .col fieldset {
+        width: 100%;
+        height: 32%;
+    }
+    .col input{
+        width: 89%;
+        height: 29px;
+        font-size: 1rem;
+    }
+    .col legend{
+        font-size: 0.8rem;
+    }
+    .profile_summary input{
+        margin-top: 0.3rem;
+        height: 29px;
+    }
+    .profile_summary fieldset {
+        width: 98.5%;
+        height: 66px;
+    }
+    .btn {
+        width: 10%;
+        height: 35%;
+        font-size: 0.9rem;
+    }
+    .profile_summary legend {
+        font-size: 0.9rem;
+    }
+    .add_button{
+        height: 60%;
+    }
+}
 @media (max-height: 430px) and (orientation: landscape){
     .outline_box{
         width: 85% !important;
@@ -587,6 +691,66 @@ textarea::placeholder{
         font-size: 0.8rem;
     }
 }
+@media (min-width: 1051px) and (max-width: 1300px){
+    .des_fieldset {
+        width: 97% !important;
+        margin-left: 1.5% !important;
+    }
+    .col_type2 fieldset {
+        width: 400px;
+        height: 40px;
+        margin-bottom: 0.5%;
+    }
+    .col_type2 legend {
+        padding: 0px;
+        font-size: 0.7rem;
+    }
+    .input_educationDetails {
+        height: 80%;
+    }
+    .pagination_container{
+        height: 22%;
+    }
+    textarea {
+        height: 44px;
+        min-width: 97%;
+        margin-left: 17px;
+        margin-top: 1%;
+    }
+    textarea::placeholder{
+        font-size: 0.8rem;
+    }
+}
+@media (min-width: 1301px) and (max-width: 1550px){
+    .des_fieldset {
+        width: 97% !important;
+        margin-left: 1.5% !important;
+    }
+    .col_type2 fieldset {
+        width: 420px;
+        height: 40px;
+        margin-bottom: 0.5%;
+    }
+    .col_type2 legend {
+        padding: 0px;
+        font-size: 0.7rem;
+    }
+    .input_educationDetails {
+        height: 80%;
+    }
+    .pagination_container{
+        height: 22%;
+    }
+    textarea {
+        height: 44px;
+        min-width: 97%;
+        margin-left: 20px;
+        margin-top: 0.5%;
+    }
+    textarea::placeholder{
+        font-size: 0.8rem;
+    }
+}
 @media (max-height: 430px) and (orientation: landscape){
     .des_fieldset {
         width: 97% !important;
@@ -666,6 +830,32 @@ textarea::placeholder{
     .extraDetails_header img {
         height: 15px;
         width: 15px;
+    }
+    .extraDetails_header {
+        font-size: 1rem;
+    }
+    .extraDetails_container input {
+        height: 5vh;
+        font-size: 0.9rem;
+    }
+}
+@media (min-width: 486px) and (max-width: 900px){
+    .extraDetails_header img {
+        height: 20px;
+        width: 20px;
+    }
+    .extraDetails_header {
+        font-size: 1.2rem;
+    }
+    .extraDetails_container input {
+        height: 5vh;
+        font-size: 0.9rem;
+    }
+}
+@media (min-width: 901px) and (max-width: 1550px){
+    .extraDetails_header img {
+        height: 22px;
+        width: 22px;
     }
     .extraDetails_header {
         font-size: 1rem;
